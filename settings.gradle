@@ -1,0 +1,5 @@
+include ':app'
+setBinding(new Binding([gradle: this]))
+
+println("settingsDir.parentFile=" + settingsDir.parentFile)
+evaluate(new File(settingsDir.parentFile, 'FlutterHybrid/flutter_module/.android/include_flutter.groovy'))
