@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Demo.dart';
 import 'Setting.dart';
 import 'EventHelper.dart';
 
@@ -20,8 +21,9 @@ class MyApp extends StatelessWidget {
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
       initialRoute: "/",
       routes: {
-        '/' : (context) => Setting(true),
+        '/' : (context) => Demo(),
         '/setting' : (context) => Setting(true),
+        '/demo' : (context) => Demo(),
       },
     );
   }

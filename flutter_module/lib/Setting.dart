@@ -144,6 +144,5 @@ class _SettingState extends State<Setting> {
 
   void _onExitClick() {
     debugPrint("Exit");
-    PlatformHelper().requestAdd();
   }
 }
